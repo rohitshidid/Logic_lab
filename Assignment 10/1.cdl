@@ -1,0 +1,247 @@
+<circuit>
+<CurrentPage>0</CurrentPage>
+<page 0>
+<PageViewport>-27.4886,20.3933,90.1302,-56.8464</PageViewport>
+<gate>
+<ID>4</ID>
+<type>AA_TOGGLE</type>
+<position>16.5,-17.5</position>
+<gparam>CLICK_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam>
+<lparam>OUTPUT_BITS 1</lparam>
+<lparam>OUTPUT_NUM 0</lparam></gate>
+<gate>
+<ID>6</ID>
+<type>GA_LED</type>
+<position>38,-18.5</position>
+<input>
+<ID>N_in0</ID>6 </input>
+<gparam>LED_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>8</ID>
+<type>GA_LED</type>
+<position>38,-24.5</position>
+<input>
+<ID>N_in0</ID>5 </input>
+<gparam>LED_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>9</ID>
+<type>AA_TOGGLE</type>
+<position>16.5,-21</position>
+<output>
+<ID>OUT_0</ID>1 </output>
+<gparam>CLICK_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam>
+<lparam>OUTPUT_BITS 1</lparam>
+<lparam>OUTPUT_NUM 0</lparam></gate>
+<gate>
+<ID>10</ID>
+<type>AA_TOGGLE</type>
+<position>16.5,-25</position>
+<output>
+<ID>OUT_0</ID>4 </output>
+<gparam>CLICK_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam>
+<lparam>OUTPUT_BITS 1</lparam>
+<lparam>OUTPUT_NUM 0</lparam></gate>
+<gate>
+<ID>12</ID>
+<type>AA_LABEL</type>
+<position>12.5,-17</position>
+<gparam>LABEL_TEXT Y0</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>13</ID>
+<type>AA_LABEL</type>
+<position>12.5,-20.5</position>
+<gparam>LABEL_TEXT Y1</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>14</ID>
+<type>AA_LABEL</type>
+<position>12.5,-24.5</position>
+<gparam>LABEL_TEXT Y2</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>16</ID>
+<type>AE_OR2</type>
+<position>32,-18.5</position>
+<input>
+<ID>IN_0</ID>1 </input>
+<input>
+<ID>IN_1</ID>3 </input>
+<output>
+<ID>OUT</ID>6 </output>
+<gparam>angle 0.0</gparam>
+<lparam>INPUT_BITS 2</lparam></gate>
+<gate>
+<ID>18</ID>
+<type>AE_OR2</type>
+<position>32,-24.5</position>
+<input>
+<ID>IN_0</ID>4 </input>
+<input>
+<ID>IN_1</ID>3 </input>
+<output>
+<ID>OUT</ID>5 </output>
+<gparam>angle 0.0</gparam>
+<lparam>INPUT_BITS 2</lparam></gate>
+<gate>
+<ID>19</ID>
+<type>AA_TOGGLE</type>
+<position>16.5,-29</position>
+<output>
+<ID>OUT_0</ID>3 </output>
+<gparam>CLICK_BOX -0.76,-0.76,0.76,0.76</gparam>
+<gparam>angle 0.0</gparam>
+<lparam>OUTPUT_BITS 1</lparam>
+<lparam>OUTPUT_NUM 0</lparam></gate>
+<gate>
+<ID>20</ID>
+<type>AA_LABEL</type>
+<position>12.5,-28.5</position>
+<gparam>LABEL_TEXT Y3</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>22</ID>
+<type>AA_LABEL</type>
+<position>42.5,-18</position>
+<gparam>LABEL_TEXT A0</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>23</ID>
+<type>AA_LABEL</type>
+<position>42.5,-24</position>
+<gparam>LABEL_TEXT A1</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<gate>
+<ID>25</ID>
+<type>AA_LABEL</type>
+<position>25.5,-33.5</position>
+<gparam>LABEL_TEXT 4:2 Encoder</gparam>
+<gparam>TEXT_HEIGHT 2</gparam>
+<gparam>angle 0.0</gparam></gate>
+<wire>
+<ID>1</ID>
+<shape>
+<vsegment>
+<ID>0</ID>
+<points>21,-21,21,-17.5</points>
+<intersection>-21 2</intersection>
+<intersection>-17.5 1</intersection></vsegment>
+<hsegment>
+<ID>1</ID>
+<points>21,-17.5,29,-17.5</points>
+<connection>
+<GID>16</GID>
+<name>IN_0</name></connection>
+<intersection>21 0</intersection></hsegment>
+<hsegment>
+<ID>2</ID>
+<points>18.5,-21,21,-21</points>
+<connection>
+<GID>9</GID>
+<name>OUT_0</name></connection>
+<intersection>21 0</intersection></hsegment></shape></wire>
+<wire>
+<ID>3</ID>
+<shape>
+<vsegment>
+<ID>0</ID>
+<points>23.5,-29,23.5,-19.5</points>
+<intersection>-29 2</intersection>
+<intersection>-25.5 3</intersection>
+<intersection>-19.5 1</intersection></vsegment>
+<hsegment>
+<ID>1</ID>
+<points>23.5,-19.5,29,-19.5</points>
+<connection>
+<GID>16</GID>
+<name>IN_1</name></connection>
+<intersection>23.5 0</intersection></hsegment>
+<hsegment>
+<ID>2</ID>
+<points>18.5,-29,23.5,-29</points>
+<connection>
+<GID>19</GID>
+<name>OUT_0</name></connection>
+<intersection>23.5 0</intersection></hsegment>
+<hsegment>
+<ID>3</ID>
+<points>23.5,-25.5,29,-25.5</points>
+<connection>
+<GID>18</GID>
+<name>IN_1</name></connection>
+<intersection>23.5 0</intersection></hsegment></shape></wire>
+<wire>
+<ID>4</ID>
+<shape>
+<hsegment>
+<ID>1</ID>
+<points>21,-23.5,29,-23.5</points>
+<connection>
+<GID>18</GID>
+<name>IN_0</name></connection>
+<intersection>21 3</intersection></hsegment>
+<vsegment>
+<ID>3</ID>
+<points>21,-25,21,-23.5</points>
+<intersection>-25 4</intersection>
+<intersection>-23.5 1</intersection></vsegment>
+<hsegment>
+<ID>4</ID>
+<points>18.5,-25,21,-25</points>
+<connection>
+<GID>10</GID>
+<name>OUT_0</name></connection>
+<intersection>21 3</intersection></hsegment></shape></wire>
+<wire>
+<ID>5</ID>
+<shape>
+<hsegment>
+<ID>1</ID>
+<points>35,-24.5,37,-24.5</points>
+<connection>
+<GID>18</GID>
+<name>OUT</name></connection>
+<connection>
+<GID>8</GID>
+<name>N_in0</name></connection></hsegment></shape></wire>
+<wire>
+<ID>6</ID>
+<shape>
+<hsegment>
+<ID>1</ID>
+<points>35,-18.5,37,-18.5</points>
+<connection>
+<GID>6</GID>
+<name>N_in0</name></connection>
+<connection>
+<GID>16</GID>
+<name>OUT</name></connection></hsegment></shape></wire></page 0>
+<page 1>
+<PageViewport>12,10.6717,151.4,-80.8717</PageViewport></page 1>
+<page 2>
+<PageViewport>0,-31.0292,139.4,-122.573</PageViewport></page 2>
+<page 3>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 3>
+<page 4>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 4>
+<page 5>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 5>
+<page 6>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 6>
+<page 7>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 7>
+<page 8>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 8>
+<page 9>
+<PageViewport>0,10.6717,139.4,-80.8717</PageViewport></page 9></circuit>
